@@ -4,7 +4,9 @@
   <img src="assets/header-dark.svg" alt="Harsh Chandak. AI/ML Software Engineer, LLM Systems at Vantion. M.S. Computer Science, Arizona State, GPA 4.00, Phoenix Arizona. Open to SDE and AI roles. 0.999 eligibility precision. ~25% of matches recovered. Reranker median from 17s to 3.8s. 3,500 ATS boards crawled. 74% lower LLM cost. 20K+ requests a day on an ERP.">
 </picture>
 
-I work on LLM systems where being wrong is expensive. Most of what I do is the unglamorous half: the evaluation harness before the feature, the cache, and the bug that was quietly eating a quarter of the results.
+I work on LLM systems where being wrong is expensive.
+
+Most of it is unglamorous. Writing the harness before the feature. Keying a scoring path on an integer instead of a UUID because the reply was output-token-bound. Finding the canonicalization bug that had been hiding a quarter of the eligible matches for months, while the tests stayed green.
 
 ---
 
@@ -22,7 +24,7 @@ I own matching: which scholarships a student is actually eligible for, and in wh
 | `6.3s → 0.15s` | repeat match requests, which now make zero LLM calls |
 | `40,000+` | scholarships, extraction cost halved by batching pages under one prompt |
 
-Also on the same product: isolated parallel LangGraph advisors so one crash stops ending a student's chat turn, moved background jobs onto a durable Postgres queue after deploys kept killing them, and made the student app usable on phones in a `79`-file change. Small team, wide surface. Closed source.
+Small team, so the surface is wide. I also isolated the parallel LangGraph advisors, because one crashing agent was taking a student's whole chat turn with it. Moved background jobs onto a durable Postgres queue after deploys kept silently killing them. Made the student app work on a phone in a `79`-file change. Closed source.
 
 <sub>Python · TypeScript · LangGraph · RAG · hybrid search · prompt caching · Postgres · pgvector · Redis · FastAPI · Next.js</sub>
 
