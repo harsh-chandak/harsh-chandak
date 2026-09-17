@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="300" viewBox="0 0 900 300" role="img">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fbf7f1"/><stop offset="1" stop-color="#f3ebdf"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="78%" cy="6%" r="62%">
+      <stop offset="0" stop-color="#b9791a" stop-opacity=".20"/>
+      <stop offset="1" stop-color="#b9791a" stop-opacity="0"/>
+    </radialGradient>
+    <style>
+      .n { font: 700 46px -apple-system, "Segoe UI", Inter, sans-serif; letter-spacing:-1.6px; fill:#1d1710 }
+      .r { font: 400 17.5px -apple-system, "Segoe UI", Inter, sans-serif; fill:#1d1710; opacity:.9 }
+      .m { font: 400 13.5px -apple-system, "Segoe UI", Inter, sans-serif; fill:#7b6750 }
+      .k { font: 700 19px ui-monospace, SFMono-Regular, Menlo, monospace; fill:#b9791a }
+      .l { font: 400 11px -apple-system, "Segoe UI", Inter, sans-serif; fill:#7b6750 }
+    </style>
+  </defs>
+  <rect width="900" height="300" rx="14" fill="url(#bg)"/>
+  <rect width="900" height="300" rx="14" fill="url(#glow)"/>
+  <rect x=".5" y=".5" width="899" height="299" rx="14" fill="none" stroke="#e0d3bd"/>
+
+  <circle cx="52" cy="52" r="5" fill="#b9791a"/>
+  <text x="68" y="57" class="l" letter-spacing="2.2">OPEN TO SDE / AI ROLES</text>
+
+  <text x="50" y="126" class="n">Harsh Chandak</text>
+  <text x="50" y="158" class="r">AI/ML Software Engineer, LLM Systems at Vantion</text>
+  <text x="50" y="182" class="m">M.S. Computer Science, Arizona State · GPA 4.00 · Phoenix, Arizona</text>
+
+  <line x1="50" y1="208" x2="850" y2="208" stroke="#e0d3bd"/>
+
+  <g>
+    <text x="50"  y="243" class="k">0.999</text><text x="50"  y="263" class="l">eligibility precision</text>
+    <text x="196" y="243" class="k">~25%</text> <text x="196" y="263" class="l">matches recovered</text>
+    <text x="330" y="243" class="k">17s→3.8s</text><text x="330" y="263" class="l">reranker median</text>
+    <text x="500" y="243" class="k">3,500</text> <text x="500" y="263" class="l">ATS boards crawled</text>
+    <text x="646" y="243" class="k">74%</text>   <text x="646" y="263" class="l">lower LLM cost</text>
+    <text x="772" y="243" class="k">20K+</text>  <text x="772" y="263" class="l">req/day on ERP</text>
+  </g>
+</svg>
