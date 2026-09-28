@@ -54,6 +54,15 @@ Owned four ERP modules used by `70+` manufacturing clients at `20K+` API request
 
 ---
 
+### Activity
+
+When the commits actually happen, and what they are written in. Straight from GitHub.
+
+<!--START_SECTION:github-->
+<!--END_SECTION:github-->
+
+---
+
 ### Time
 
 Last seven days in an editor. Terminal work, review and reading do not appear here,
