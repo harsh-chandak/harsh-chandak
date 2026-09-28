@@ -54,6 +54,16 @@ Owned four ERP modules used by `70+` manufacturing clients at `20K+` API request
 
 ---
 
+### Time
+
+Last seven days in an editor. Terminal work, review and reading do not appear here,
+so this undercounts, and it measures where the time went rather than what came of it.
+
+<!--START_SECTION:waka-->
+<!--END_SECTION:waka-->
+
+---
+
 ### Rest
 
 M.S. Computer Science, Arizona State, `4.00` · B.Tech Computer Engineering, Pune University, `8.52`
