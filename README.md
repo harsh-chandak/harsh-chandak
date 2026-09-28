@@ -60,6 +60,11 @@ Last seven days in an editor. Terminal work, review and reading do not appear he
 so this undercounts, and it measures where the time went rather than what came of it.
 
 <!--START_SECTION:waka-->
+
+```text
+No activity tracked
+```
+
 <!--END_SECTION:waka-->
 
 ---
