@@ -4,6 +4,9 @@
   <img src="assets/header-dark.svg" alt="Harsh Chandak. AI/ML Software Engineer, LLM Systems at Vantion. M.S. Computer Science, Arizona State, GPA 4.00, Phoenix Arizona. Open to SDE and AI roles. 0.999 eligibility precision. ~25% of matches recovered. Reranker median from 17s to 3.8s. 3,500 ATS boards crawled. 74% lower LLM cost. 20K+ requests a day on an ERP.">
 </picture>
 
+<sub>The contribution and Claude Code figures in the header are regenerated nightly from a <a href="https://gist.github.com/harsh-chandak/39e44bf9e8257251c0846690406ed283">public gist</a> of aggregates, whose revision history is the audit trail.</sub>
+
+
 I work on LLM systems where being wrong is expensive.
 
 Most of it is unglamorous. Writing the harness before the feature. Keying a scoring path on an integer instead of a UUID because the reply was output-token-bound. Finding the canonicalization bug that had been hiding a quarter of the eligible matches for months, while the tests stayed green.
