@@ -5,6 +5,8 @@
       "kicker": "JOB PIPELINE",
       "name": "Job Market Crawler",
       "line": "Polls ATS boards directly and ranks every posting deterministically before it spends a single model call.",
+      "hook_kicker": "BEFORE THE AGGREGATORS",
+      "hook_line": "By the time a job reaches LinkedIn, you are late.",
       "stats": [
         {
           "k": "3,500",
@@ -27,6 +29,8 @@
       "kicker": "KNOWLEDGE GRAPH",
       "name": "TrustMed",
       "line": "Answers drug questions by traversing a medical knowledge graph instead of matching text against it.",
+      "hook_kicker": "NOT A SEARCH QUERY",
+      "hook_line": "Substitutes with the same active set is a traversal, not a search.",
       "stats": [
         {
           "k": "354K",
@@ -49,6 +53,8 @@
       "kicker": "ZERO KNOWLEDGE",
       "name": "ZK-ColdChain",
       "line": "Proves a refrigerated shipment broke its temperature limit without revealing the temperature log, then pays out on the proof.",
+      "hook_kicker": "THE LOG STAYS PRIVATE",
+      "hook_line": "Proving a shipment stayed cold normally means handing over the log.",
       "stats": [
         {
           "k": "8°C",
@@ -71,14 +77,16 @@
       "kicker": "DATA VISUALIZATION",
       "name": "Maryland Crash Atlas",
       "line": "Linked D3 views over public crash reports, where selecting in any chart filters the map with it.",
+      "hook_kicker": "32,429 CRASH RECORDS",
+      "hook_line": "Twenty fields, far more rows than anyone reads, and no ZIP on any record.",
       "stats": [
         {
           "k": "32K",
-          "l": "crash records"
+          "l": "crash records mapped"
         },
         {
-          "k": "5",
-          "l": "linked view types"
+          "k": "6",
+          "l": "linked views"
         },
         {
           "k": "GeoJSON",
@@ -86,13 +94,15 @@
         }
       ],
       "stack": "D3.js · Node.js · GeoJSON · data.gov",
-      "note": "source: final.csv is 32,429 rows over 20 fields; five view types in index.html; Montgomery County crash reporting via data.gov"
+      "note": "source: final.csv is 32,429 rows over 20 fields AFTER cleaning, which is what the page loads; the raw data.gov export is larger and his LinkedIn entry cites 185K+ processed, so label this one 'mapped' and do not conflate the two. Six views, counted from the SVG ids in index.html: geospatial, splom, heatmap, stacked-bar-chart, tree-map, car-clock. An earlier version of this card said five and missed the treemap."
     },
     {
       "slug": "krr-project",
       "kicker": "ANSWER SET PROGRAMMING",
       "name": "Automated Warehouse",
       "line": "Encodes multi-robot warehouse fulfilment as logic constraints and solves for plans where robots never collide.",
+      "hook_kicker": "NO SEARCH, NO ALGORITHM",
+      "hook_line": "Nothing here searches for a plan. The constraints are simply stated.",
       "stats": [
         {
           "k": "5",

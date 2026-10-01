@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640" role="img" aria-label="Maryland Crash Atlas. Linked D3 views over public crash reports, where selecting in any chart filters the map with it. 32K crash records. 5 linked view types. GeoJSON ZIP boundaries. Built with D3.js · Node.js · GeoJSON · data.gov.">
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640" role="img" aria-label="Maryland Crash Atlas. Linked D3 views over public crash reports, where selecting in any chart filters the map with it. 32K crash records mapped. 6 linked views. GeoJSON ZIP boundaries. Built with D3.js · Node.js · GeoJSON · data.gov.">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#17130f"/><stop offset="1" stop-color="#241c14"/>
@@ -28,9 +28,9 @@
   <line x1="50" y1="398" x2="1230" y2="412" stroke="#413326"/>
   <g>
     <text x="50" y="458" class="k">32K</text>
-    <text x="50" y="488" class="m">crash records</text>
-    <text x="443" y="458" class="k">5</text>
-    <text x="443" y="488" class="m">linked view types</text>
+    <text x="50" y="488" class="m">crash records mapped</text>
+    <text x="443" y="458" class="k">6</text>
+    <text x="443" y="488" class="m">linked views</text>
     <text x="837" y="458" class="k">GeoJSON</text>
     <text x="837" y="488" class="m">ZIP boundaries</text>
   </g>
