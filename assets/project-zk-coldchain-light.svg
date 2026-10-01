@@ -20,7 +20,7 @@
   <rect width="1280" height="640" fill="url(#glow)"/>
 
   <circle cx="54" cy="74" r="6" fill="#b26a00"/>
-  <text x="74" y="80" class="l" letter-spacing="2.6">ZERO KNOWLEDGE  ·  JUPYTER NOTEBOOK</text>
+  <text x="74" y="80" class="l" letter-spacing="2.6">ZERO KNOWLEDGE</text>
 
   <text x="50" y="214" class="n">ZK-ColdChain</text>
   <text x="50" y="276" class="r">Proves a refrigerated shipment broke its temperature limit without</text>

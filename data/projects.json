@@ -6,9 +6,18 @@
       "name": "Job Market Crawler",
       "line": "Polls ATS boards directly and ranks every posting deterministically before it spends a single model call.",
       "stats": [
-        { "k": "3,500", "l": "ATS boards polled" },
-        { "k": "86%", "l": "of 1M+ polls skipped" },
-        { "k": "0", "l": "model calls to screen" }
+        {
+          "k": "3,500",
+          "l": "ATS boards polled"
+        },
+        {
+          "k": "86%",
+          "l": "of 1M+ polls skipped"
+        },
+        {
+          "k": "0",
+          "l": "model calls to screen"
+        }
       ],
       "stack": "Node.js · MongoDB · conditional GET · Typst",
       "note": "source: repo description and README; the 86% is the 304-not-modified share of all polls"
@@ -19,9 +28,18 @@
       "name": "TrustMed",
       "line": "Answers drug questions by traversing a medical knowledge graph instead of matching text against it.",
       "stats": [
-        { "k": "354K", "l": "medical concepts" },
-        { "k": "23M+", "l": "graph relationships" },
-        { "k": "UMLS", "l": "RxNorm + SNOMED CT" }
+        {
+          "k": "354K",
+          "l": "medical concepts"
+        },
+        {
+          "k": "23M+",
+          "l": "graph relationships"
+        },
+        {
+          "k": "UMLS",
+          "l": "RxNorm + SNOMED CT"
+        }
       ],
       "stack": "Rasa · Neo4j · Python · openFDA",
       "note": "source: README, 354,029 concepts and 23M+ edges from the UMLS Level 0 subset"
@@ -32,9 +50,18 @@
       "name": "ZK-ColdChain",
       "line": "Proves a refrigerated shipment broke its temperature limit without revealing the temperature log, then pays out on the proof.",
       "stats": [
-        { "k": "8°C", "l": "breach proven privately" },
-        { "k": "Groth16", "l": "on-chain verifier" },
-        { "k": "0", "l": "manual claims review" }
+        {
+          "k": "8°C",
+          "l": "breach proven privately"
+        },
+        {
+          "k": "Groth16",
+          "l": "on-chain verifier"
+        },
+        {
+          "k": "0",
+          "l": "manual claims review"
+        }
       ],
       "stack": "Circom · Solidity · snarkjs · Merkle logs",
       "note": "source: README; 8°C is the circuit's constraint, Groth16 the generated verifier"
@@ -45,12 +72,21 @@
       "name": "Maryland Crash Atlas",
       "line": "Linked D3 views over public crash reports, where selecting in any chart filters the map with it.",
       "stats": [
-        { "k": "D3", "l": "linked brushing" },
-        { "k": "GeoJSON", "l": "ZIP boundaries" },
-        { "k": "data.gov", "l": "public source data" }
+        {
+          "k": "32K",
+          "l": "crash records"
+        },
+        {
+          "k": "5",
+          "l": "linked view types"
+        },
+        {
+          "k": "GeoJSON",
+          "l": "ZIP boundaries"
+        }
       ],
       "stack": "D3.js · Node.js · GeoJSON · data.gov",
-      "note": "source: README and repo description; dataset is Montgomery County crash reporting"
+      "note": "source: final.csv is 32,429 rows over 20 fields; five view types in index.html; Montgomery County crash reporting via data.gov"
     },
     {
       "slug": "krr-project",
@@ -58,9 +94,18 @@
       "name": "Automated Warehouse",
       "line": "Encodes multi-robot warehouse fulfilment as logic constraints and solves for plans where robots never collide.",
       "stats": [
-        { "k": "5", "l": "benchmark instances" },
-        { "k": "0", "l": "collisions permitted" },
-        { "k": "ASP", "l": "Challenge 2019 domain" }
+        {
+          "k": "5",
+          "l": "benchmark instances"
+        },
+        {
+          "k": "0",
+          "l": "collisions permitted"
+        },
+        {
+          "k": "ASP",
+          "l": "Challenge 2019 domain"
+        }
       ],
       "stack": "Clingo · Answer Set Programming · Python",
       "note": "source: README; instances inst1-inst5, domain from the ASP Challenge 2019"

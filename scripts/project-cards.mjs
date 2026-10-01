@@ -101,7 +101,12 @@ async function repoMeta(slug) {
 }
 
 function render(p, meta, t) {
-  const kicker = [p.kicker, meta.language.toUpperCase()].filter(Boolean).join("  ·  ");
+  // The kicker names the domain only. Linguist's answer is a poor label for
+  // several of these: it reports Prolog for Clingo answer-set programs and
+  // JavaScript for a zero-knowledge project, so the card read "ANSWER SET
+  // PROGRAMMING · PROLOG" and contradicted itself. The stack line at the foot
+  // is hand-written per project and says what was actually used.
+  const kicker = p.kicker;
   const lines = wrap(p.line, 27, W - 100, 2);
   const alt = `${p.name}. ${p.line} ${p.stats.map((s) => `${s.k} ${s.l}`).join(". ")}. Built with ${p.stack}.`;
 
