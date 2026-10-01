@@ -57,4 +57,13 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add assets
           git commit -m "Profile cards: refresh live figures"
-          git push
+          # Concurrency queues a second run but does not re-checkout it, so a
+          # queued run pushes from a ref that is already stale and is rejected.
+          # The WakaTime job commits README.md on this same branch, so this is
+          # a normal condition, not an error. Rebase onto whatever landed and
+          # retry; the two jobs never touch the same files.
+          for i in 1 2 3; do
+            git pull --rebase --autostash origin main && git push && exit 0
+            echo "push attempt $i lost a race, retrying"; sleep 5
+          done
+          echo "could not push after 3 attempts"; exit 1
