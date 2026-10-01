@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640" role="img" aria-label="Automated Warehouse. Encodes multi-robot warehouse fulfilment as logic constraints and solves for plans where robots never collide. 5 benchmark instances. 0 collisions permitted. ASP Challenge 2019 domain. Built with Clingo · Answer Set Programming · Python.">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#17130f"/><stop offset="1" stop-color="#241c14"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="80%" cy="4%" r="64%">
+      <stop offset="0" stop-color="#f5a524" stop-opacity=".20"/>
+      <stop offset="1" stop-color="#f5a524" stop-opacity="0"/>
+    </radialGradient>
+    <style>
+      .n { font: 700 72px -apple-system, "Segoe UI", Inter, sans-serif; letter-spacing:-2.4px; fill:#f6efe6 }
+      .r { font: 400 27px -apple-system, "Segoe UI", Inter, sans-serif; fill:#f6efe6; opacity:.9 }
+      .m { font: 400 17px -apple-system, "Segoe UI", Inter, sans-serif; fill:#b09b84 }
+      .k { font: 700 32px ui-monospace, SFMono-Regular, Menlo, monospace; fill:#f5a524 }
+      .l { font: 400 14px -apple-system, "Segoe UI", Inter, sans-serif; fill:#b09b84 }
+      .s { font: 400 16px ui-monospace, SFMono-Regular, Menlo, monospace; fill:#b09b84 }
+    </style>
+  </defs>
+  <rect width="1280" height="640" fill="url(#bg)"/>
+  <rect width="1280" height="640" fill="url(#glow)"/>
+
+  <circle cx="54" cy="74" r="6" fill="#f5a524"/>
+  <text x="74" y="80" class="l" letter-spacing="2.6">ANSWER SET PROGRAMMING  ·  CLASSIC ASP</text>
+
+  <text x="50" y="214" class="n">Automated Warehouse</text>
+  <text x="50" y="276" class="r">Encodes multi-robot warehouse fulfilment as logic</text>
+  <text x="50" y="314" class="r">constraints and solves for plans where robots never collide.</text>
+
+  <line x1="50" y1="398" x2="1230" y2="412" stroke="#413326"/>
+  <g>
+    <text x="50" y="458" class="k">5</text>
+    <text x="50" y="488" class="m">benchmark instances</text>
+    <text x="443" y="458" class="k">0</text>
+    <text x="443" y="488" class="m">collisions permitted</text>
+    <text x="837" y="458" class="k">ASP</text>
+    <text x="837" y="488" class="m">Challenge 2019 domain</text>
+  </g>
+
+  <line x1="50" y1="548" x2="1230" y2="548" stroke="#413326"/>
+  <text x="50" y="586" class="s">Clingo · Answer Set Programming · Python</text>
+  <text x="1230" y="586" class="s" text-anchor="end">github.com/harsh-chandak/krr-project</text>
+  <text x="1230" y="80" class="l" text-anchor="end">★ 2</text>
+</svg>

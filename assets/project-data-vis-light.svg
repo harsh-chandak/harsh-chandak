@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640" role="img" aria-label="Maryland Crash Atlas. Linked D3 views over public crash reports, where selecting in any chart filters the map with it. D3 linked brushing. GeoJSON ZIP boundaries. data.gov public source data. Built with D3.js · Node.js · GeoJSON · data.gov.">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fdf6e8"/><stop offset="1" stop-color="#f6e9d4"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="80%" cy="4%" r="64%">
+      <stop offset="0" stop-color="#b26a00" stop-opacity=".20"/>
+      <stop offset="1" stop-color="#b26a00" stop-opacity="0"/>
+    </radialGradient>
+    <style>
+      .n { font: 700 72px -apple-system, "Segoe UI", Inter, sans-serif; letter-spacing:-2.4px; fill:#2f2417 }
+      .r { font: 400 27px -apple-system, "Segoe UI", Inter, sans-serif; fill:#2f2417; opacity:.9 }
+      .m { font: 400 17px -apple-system, "Segoe UI", Inter, sans-serif; fill:#7b6750 }
+      .k { font: 700 32px ui-monospace, SFMono-Regular, Menlo, monospace; fill:#b26a00 }
+      .l { font: 400 14px -apple-system, "Segoe UI", Inter, sans-serif; fill:#7b6750 }
+      .s { font: 400 16px ui-monospace, SFMono-Regular, Menlo, monospace; fill:#7b6750 }
+    </style>
+  </defs>
+  <rect width="1280" height="640" fill="url(#bg)"/>
+  <rect width="1280" height="640" fill="url(#glow)"/>
+
+  <circle cx="54" cy="74" r="6" fill="#b26a00"/>
+  <text x="74" y="80" class="l" letter-spacing="2.6">DATA VISUALIZATION  ·  JAVASCRIPT</text>
+
+  <text x="50" y="214" class="n">Maryland Crash Atlas</text>
+  <text x="50" y="276" class="r">Linked D3 views over public crash reports, where selecting in any chart filters the map with it.</text>
+
+  <line x1="50" y1="398" x2="1230" y2="412" stroke="#e0cfb2"/>
+  <g>
+    <text x="50" y="458" class="k">D3</text>
+    <text x="50" y="488" class="m">linked brushing</text>
+    <text x="443" y="458" class="k">GeoJSON</text>
+    <text x="443" y="488" class="m">ZIP boundaries</text>
+    <text x="837" y="458" class="k">data.gov</text>
+    <text x="837" y="488" class="m">public source data</text>
+  </g>
+
+  <line x1="50" y1="548" x2="1230" y2="548" stroke="#e0cfb2"/>
+  <text x="50" y="586" class="s">D3.js · Node.js · GeoJSON · data.gov</text>
+  <text x="1230" y="586" class="s" text-anchor="end">github.com/harsh-chandak/data-vis</text>
+  <text x="1230" y="80" class="l" text-anchor="end">★ 2</text>
+</svg>

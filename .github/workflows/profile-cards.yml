@@ -1,6 +1,7 @@
 name: Profile cards
 
-# Renders assets/header-{dark,light}.svg and commits them when they change.
+# Renders assets/header-{dark,light}.svg and assets/project-*-{dark,light}.svg
+# and commits them when they change.
 #
 # This replaces the GitHub Stats workflow, which failed every run from the day
 # it was added: waka-readme-stats calls GET /user, and the built-in GITHUB_TOKEN
@@ -17,7 +18,9 @@ on:
     branches: [main]
     paths:
       - "data/header.json"
+      - "data/projects.json"
       - "scripts/profile-cards.mjs"
+      - "scripts/project-cards.mjs"
       - ".github/workflows/profile-cards.yml"
   schedule:
     # 05:40 UTC. Deliberately not 12:00, when the WakaTime job commits to
@@ -47,6 +50,14 @@ jobs:
           # exists; until then the live strip simply omits those figures.
           CLAUDE_STATS_GIST: ${{ vars.CLAUDE_STATS_GIST }}
         run: node scripts/profile-cards.mjs --out assets
+
+      - name: Render project cards
+        env:
+          GH_USER: harsh-chandak
+          # Only to raise the unauthenticated rate limit; the script reads the
+          # same public repository fields either way.
+          GITHUB_TOKEN: ${{ github.token }}
+        run: node scripts/project-cards.mjs --out assets
 
       - name: Commit if changed
         run: |
