@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640" role="img" aria-label="TrustMed. Answers drug questions by traversing a medical knowledge graph instead of matching text against it. 354K medical concepts. 23M+ graph relationships. UMLS RxNorm + SNOMED CT. Built with Rasa · Neo4j · Python · openFDA.">
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640" role="img" aria-label="Property Registration. Moves property titles between owners as smart contracts, so the record cannot be quietly edited. Ethereum contracts via Ganache. Flutter web dashboard. No SQL so no injection surface. Built with Ethereum · Solidity · Truffle · Ganache · Flutter.">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#17130f"/><stop offset="1" stop-color="#241c14"/>
@@ -20,23 +20,23 @@
   <rect width="1280" height="640" fill="url(#glow)"/>
 
   <circle cx="54" cy="74" r="6" fill="#f5a524"/>
-  <text x="74" y="80" class="l" letter-spacing="2.6">KNOWLEDGE GRAPH</text>
+  <text x="74" y="80" class="l" letter-spacing="2.6">BLOCKCHAIN</text>
 
-  <text x="50" y="214" class="n">TrustMed</text>
-  <text x="50" y="276" class="r">Answers drug questions by traversing a medical knowledge graph instead of matching text against it.</text>
+  <text x="50" y="214" class="n">Property Registration</text>
+  <text x="50" y="276" class="r">Moves property titles between owners as smart contracts, so the record cannot be quietly edited.</text>
 
   <line x1="50" y1="398" x2="1230" y2="398" stroke="#413326"/>
   <g>
-    <text x="50" y="458" class="k">354K</text>
-    <text x="50" y="488" class="m">medical concepts</text>
-    <text x="443" y="458" class="k">23M+</text>
-    <text x="443" y="488" class="m">graph relationships</text>
-    <text x="837" y="458" class="k">UMLS</text>
-    <text x="837" y="488" class="m">RxNorm + SNOMED CT</text>
+    <text x="50" y="458" class="k">Ethereum</text>
+    <text x="50" y="488" class="m">contracts via Ganache</text>
+    <text x="443" y="458" class="k">Flutter</text>
+    <text x="443" y="488" class="m">web dashboard</text>
+    <text x="837" y="458" class="k">No SQL</text>
+    <text x="837" y="488" class="m">so no injection surface</text>
   </g>
 
   <line x1="50" y1="548" x2="1230" y2="548" stroke="#413326"/>
-  <text x="50" y="586" class="s">Rasa · Neo4j · Python · openFDA</text>
-  <text x="1230" y="586" class="s" text-anchor="end">github.com/harsh-chandak/trustmed</text>
-  <text x="1230" y="80" class="l" text-anchor="end">★ 2</text>
+  <text x="50" y="586" class="s">Ethereum · Solidity · Truffle · Ganache · Flutter</text>
+  <text x="1230" y="586" class="s" text-anchor="end">harsh-chandak.com</text>
+  
 </svg>

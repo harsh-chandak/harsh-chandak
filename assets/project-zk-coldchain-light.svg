@@ -26,7 +26,7 @@
   <text x="50" y="276" class="r">Proves a refrigerated shipment broke its temperature limit without</text>
   <text x="50" y="314" class="r">revealing the temperature log, then pays out on the proof.</text>
 
-  <line x1="50" y1="398" x2="1230" y2="412" stroke="#e0cfb2"/>
+  <line x1="50" y1="398" x2="1230" y2="398" stroke="#e0cfb2"/>
   <g>
     <text x="50" y="458" class="k">8°C</text>
     <text x="50" y="488" class="m">breach proven privately</text>

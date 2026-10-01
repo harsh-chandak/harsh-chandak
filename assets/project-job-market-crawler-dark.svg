@@ -26,7 +26,7 @@
   <text x="50" y="276" class="r">Polls ATS boards directly and ranks every posting</text>
   <text x="50" y="314" class="r">deterministically before it spends a single model call.</text>
 
-  <line x1="50" y1="398" x2="1230" y2="412" stroke="#413326"/>
+  <line x1="50" y1="398" x2="1230" y2="398" stroke="#413326"/>
   <g>
     <text x="50" y="458" class="k">3,500</text>
     <text x="50" y="488" class="m">ATS boards polled</text>

@@ -25,7 +25,7 @@
   <text x="50" y="214" class="n">TrustMed</text>
   <text x="50" y="276" class="r">Answers drug questions by traversing a medical knowledge graph instead of matching text against it.</text>
 
-  <line x1="50" y1="398" x2="1230" y2="412" stroke="#e0cfb2"/>
+  <line x1="50" y1="398" x2="1230" y2="398" stroke="#e0cfb2"/>
   <g>
     <text x="50" y="458" class="k">354K</text>
     <text x="50" y="488" class="m">medical concepts</text>

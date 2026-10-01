@@ -26,7 +26,7 @@
   <text x="50" y="276" class="r">Encodes multi-robot warehouse fulfilment as logic</text>
   <text x="50" y="314" class="r">constraints and solves for plans where robots never collide.</text>
 
-  <line x1="50" y1="398" x2="1230" y2="412" stroke="#e0cfb2"/>
+  <line x1="50" y1="398" x2="1230" y2="398" stroke="#e0cfb2"/>
   <g>
     <text x="50" y="458" class="k">5</text>
     <text x="50" y="488" class="m">benchmark instances</text>

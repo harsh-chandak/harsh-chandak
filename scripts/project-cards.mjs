@@ -148,23 +148,28 @@ function render(p, meta, t) {
   <text x="50" y="214" class="n">${esc(p.name)}</text>
 ${lines.map((l, i) => `  <text x="50" y="${276 + i * 38}" class="r">${esc(l)}</text>`).join("\n")}
 
-  <line x1="50" y1="398" x2="${W - 50}" y2="412" stroke="${t.line}"/>
+  <line x1="50" y1="398" x2="${W - 50}" y2="398" stroke="${t.line}"/>
   <g>
 ${cells}
   </g>
 
   <line x1="50" y1="548" x2="${W - 50}" y2="548" stroke="${t.line}"/>
   <text x="50" y="586" class="s">${esc(p.stack)}</text>
-  <text x="${W - 50}" y="586" class="s" text-anchor="end">${esc(`github.com/${USER}/${p.slug}`)}</text>
+  <text x="${W - 50}" y="586" class="s" text-anchor="end">${esc(meta.footer || `github.com/${USER}/${p.slug}`)}</text>
   ${right ? `<text x="${W - 50}" y="80" class="l" text-anchor="end">${esc(right)}</text>` : ""}
 </svg>
 `;
 }
 
-const cfg = JSON.parse(await readFile(resolve(ROOT, "data/projects.json"), "utf8"));
+// Some of his LinkedIn projects are coursework that never got a repository.
+// They still want a card, so a project may set "repo": false — no API call, and
+// the foot of the card points at the portfolio instead of a github.com path.
+const cfg = JSON.parse(await readFile(resolve(ROOT, arg("data", "data/projects.json")), "utf8"));
 let changed = 0;
 for (const p of cfg.projects) {
-  const meta = await repoMeta(p.slug);
+  const meta = p.repo === false
+    ? { stars: 0, language: "", license: "", footer: p.footer || "harsh-chandak.com" }
+    : await repoMeta(p.slug);
   for (const [name, t] of Object.entries(THEMES)) {
     const path = resolve(OUT, `project-${p.slug}-${name}.svg`);
     const next = render(p, meta, t);

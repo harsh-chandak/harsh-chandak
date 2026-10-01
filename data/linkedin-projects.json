@@ -1,0 +1,61 @@
+{
+  "_": "Cards for LinkedIn project entries that have no repository and no screenshot. Every line below is quoted or condensed from the description already on that LinkedIn entry, read from the edit form, so the card and the entry cannot drift apart. The four entries that already carry a real screenshot (Kafka pipeline, crash atlas, warehouse planner, job alerts) are deliberately absent: an actual artefact beats a text card.",
+  "projects": [
+    {
+      "slug": "remote-patient-monitoring",
+      "repo": false,
+      "kicker": "EMBEDDED HEALTHCARE",
+      "name": "Remote Patient Monitoring",
+      "line": "Watches a patient's vitals from outside the hospital, and pages the staff when something moves.",
+      "stats": [
+        { "k": "Arduino", "l": "UNO and a sensor array" },
+        { "k": "GSM 900", "l": "alerts over cellular" },
+        { "k": "COVID-19", "l": "bed and staff shortage" }
+      ],
+      "stack": "Arduino UNO · GSM 900 · sensor array",
+      "note": "source: his LinkedIn entry 135981598, read from the edit form: 'cheap and easily accessible solution to tackle unavailability of beds in hospitals and healthcare staff during COVID-19 pandemic... arduino UNO, GSM 900 and an array of sensors to regularly check and alert medical staff about body parameters of a patient.'"
+    },
+    {
+      "slug": "property-registration",
+      "repo": false,
+      "kicker": "BLOCKCHAIN",
+      "name": "Property Registration",
+      "line": "Moves property titles between owners as smart contracts, so the record cannot be quietly edited.",
+      "stats": [
+        { "k": "Ethereum", "l": "contracts via Ganache" },
+        { "k": "Flutter", "l": "web dashboard" },
+        { "k": "No SQL", "l": "so no injection surface" }
+      ],
+      "stack": "Ethereum · Solidity · Truffle · Ganache · Flutter",
+      "note": "source: his LinkedIn entry 29820432: 'Ethereum block-chain based application using ganache for making smart contracts for property. Web dashboard was designed using flutter... closing vulnerability to SQL injection and phishing attacks.' The third stat restates his own claim and should not be read as a measured result."
+    },
+    {
+      "slug": "sign-language-detection",
+      "repo": false,
+      "kicker": "REAL-TIME CLASSIFICATION",
+      "name": "Sign Language Detection",
+      "line": "Reads American Sign Language from a webcam by classifying hand keypoints rather than raw frames.",
+      "stats": [
+        { "k": "Keypoints", "l": "not image frames" },
+        { "k": "MediaPipe", "l": "hand landmarks" },
+        { "k": "Feed-forward", "l": "network, trained on ASL" }
+      ],
+      "stack": "Python · MediaPipe · feed-forward neural network",
+      "note": "source: his LinkedIn entry 135964901: 'feed-forward neural network in combination with MediaPipe library can lead to less storage requirement for dataset and faster response time in real-time detection of American Sign Language.' Deliberately no speed or storage figure: the entry claims the direction, not a measurement."
+    },
+    {
+      "slug": "blockchain-ai-breaches",
+      "repo": false,
+      "kicker": "RESEARCH",
+      "name": "Breach Detection in Finance",
+      "line": "Pairs anomaly detection with an audit trail nobody can rewrite after the fact.",
+      "stats": [
+        { "k": "Smart", "l": "contracts for data security" },
+        { "k": "Case", "l": "studies, not a deployment" },
+        { "k": "Fraud", "l": "detection and transparency" }
+      ],
+      "stack": "Blockchain · smart contracts · anomaly detection",
+      "note": "source: his LinkedIn entry 1884956368: 'Proposed blockchain and AI integration solutions for financial data security through smart contracts. Conducted case studies...' The middle stat says 'case studies, not a deployment' on purpose, because this was research and the card should not imply a shipped system."
+    }
+  ]
+}

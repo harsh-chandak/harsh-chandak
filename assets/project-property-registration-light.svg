@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640" role="img" aria-label="Job Market Crawler. Polls ATS boards directly and ranks every posting deterministically before it spends a single model call. 3,500 ATS boards polled. 86% of 1M+ polls skipped. 0 model calls to screen. Built with Node.js · MongoDB · conditional GET · Typst.">
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640" role="img" aria-label="Property Registration. Moves property titles between owners as smart contracts, so the record cannot be quietly edited. Ethereum contracts via Ganache. Flutter web dashboard. No SQL so no injection surface. Built with Ethereum · Solidity · Truffle · Ganache · Flutter.">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#fdf6e8"/><stop offset="1" stop-color="#f6e9d4"/>
@@ -20,24 +20,23 @@
   <rect width="1280" height="640" fill="url(#glow)"/>
 
   <circle cx="54" cy="74" r="6" fill="#b26a00"/>
-  <text x="74" y="80" class="l" letter-spacing="2.6">JOB PIPELINE</text>
+  <text x="74" y="80" class="l" letter-spacing="2.6">BLOCKCHAIN</text>
 
-  <text x="50" y="214" class="n">Job Market Crawler</text>
-  <text x="50" y="276" class="r">Polls ATS boards directly and ranks every posting</text>
-  <text x="50" y="314" class="r">deterministically before it spends a single model call.</text>
+  <text x="50" y="214" class="n">Property Registration</text>
+  <text x="50" y="276" class="r">Moves property titles between owners as smart contracts, so the record cannot be quietly edited.</text>
 
   <line x1="50" y1="398" x2="1230" y2="398" stroke="#e0cfb2"/>
   <g>
-    <text x="50" y="458" class="k">3,500</text>
-    <text x="50" y="488" class="m">ATS boards polled</text>
-    <text x="443" y="458" class="k">86%</text>
-    <text x="443" y="488" class="m">of 1M+ polls skipped</text>
-    <text x="837" y="458" class="k">0</text>
-    <text x="837" y="488" class="m">model calls to screen</text>
+    <text x="50" y="458" class="k">Ethereum</text>
+    <text x="50" y="488" class="m">contracts via Ganache</text>
+    <text x="443" y="458" class="k">Flutter</text>
+    <text x="443" y="488" class="m">web dashboard</text>
+    <text x="837" y="458" class="k">No SQL</text>
+    <text x="837" y="488" class="m">so no injection surface</text>
   </g>
 
   <line x1="50" y1="548" x2="1230" y2="548" stroke="#e0cfb2"/>
-  <text x="50" y="586" class="s">Node.js · MongoDB · conditional GET · Typst</text>
-  <text x="1230" y="586" class="s" text-anchor="end">github.com/harsh-chandak/job-market-crawler</text>
-  <text x="1230" y="80" class="l" text-anchor="end">★ 2</text>
+  <text x="50" y="586" class="s">Ethereum · Solidity · Truffle · Ganache · Flutter</text>
+  <text x="1230" y="586" class="s" text-anchor="end">harsh-chandak.com</text>
+  
 </svg>
