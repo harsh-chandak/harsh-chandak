@@ -1,0 +1,60 @@
+name: Profile cards
+
+# Renders assets/header-{dark,light}.svg and commits them when they change.
+#
+# This replaces the GitHub Stats workflow, which failed every run from the day
+# it was added: waka-readme-stats calls GET /user, and the built-in GITHUB_TOKEN
+# is an installation token with no user identity, so it 403s. The fix it wanted
+# was a personal access token. This needs none — the contribution calendar is
+# public and read anonymously, and the optional Claude Code gist is public too.
+#
+# If a source fails the script throws before writing, this job goes red, and the
+# last good card stays committed. A stale card beats a card with a wrong number.
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "data/header.json"
+      - "scripts/profile-cards.mjs"
+      - ".github/workflows/profile-cards.yml"
+  schedule:
+    # 05:40 UTC. Deliberately not 12:00, when the WakaTime job commits to
+    # README.md on this same branch; two jobs pushing at once is a lost race.
+    - cron: "40 5 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-cards
+  cancel-in-progress: false
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Render
+        env:
+          GH_USER: harsh-chandak
+          # Set this repository variable once the nightly Claude Code gist
+          # exists; until then the live strip simply omits those figures.
+          CLAUDE_STATS_GIST: ${{ vars.CLAUDE_STATS_GIST }}
+        run: node scripts/profile-cards.mjs --out assets
+
+      - name: Commit if changed
+        run: |
+          if [[ -z "$(git status --porcelain assets)" ]]; then
+            echo "cards unchanged"; exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets
+          git commit -m "Profile cards: refresh live figures"
+          git push

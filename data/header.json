@@ -1,0 +1,15 @@
+{
+  "_comment": "Facts for the header card. Edit this, not the SVG. scripts/profile-cards.mjs renders assets/header-{dark,light}.svg from it nightly and on every push to this file. The numbers trace to job-hunt/resume/bullets.yaml; keep them identical so the header, the resume and LinkedIn never disagree.",
+  "badge": "OPEN TO SDE / AI ROLES",
+  "name": "Harsh Chandak",
+  "role": "AI/ML Software Engineer Intern, LLM Systems at Vantion",
+  "meta": "M.S. Computer Science, Arizona State · GPA 4.00 · Phoenix, Arizona",
+  "stats": [
+    { "value": "0.999",    "label": "eligibility precision", "x": 50 },
+    { "value": "~25%",     "label": "matches recovered",     "x": 196 },
+    { "value": "17s→3.8s", "label": "reranker median",       "x": 330 },
+    { "value": "3,500",    "label": "ATS boards crawled",    "x": 500 },
+    { "value": "74%",      "label": "lower LLM cost",        "x": 646 },
+    { "value": "20K+",     "label": "req/day on ERP",        "x": 772 }
+  ]
+}
