@@ -62,7 +62,22 @@ Owned four ERP modules used by `70+` manufacturing clients at `20K+` API request
 When the commits actually happen, and what they are written in. Straight from GitHub.
 
 <!--START_SECTION:github-->
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/activity-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/activity-light.svg">
+  <img src="assets/activity-light.svg" alt="Public GitHub activity: contributions in the last year, days with a commit, longest streak in days, and number of public repositories. Counted from public repositories only, so private work is not included.">
+</picture>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/languages-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/languages-light.svg">
+  <img src="assets/languages-light.svg" alt="Languages across every public repository, measured in bytes by GitHub Linguist and shown as a ranked proportion bar with the share held by each language.">
+</picture>
 <!--END_SECTION:github-->
+
+<sub>Public repositories only. The pull requests and issues that usually fill a
+profile card sit in private ones, so a card counting those would read zero and
+say nothing true about the work.</sub>
 
 ---
 
@@ -93,4 +108,8 @@ Python · TypeScript · SQL · FastAPI · Node · React · Postgres · Redis · 
 
 Phoenix, Arizona. Open to SDE and AI roles.
 
-[harsh-chandak.com](https://harsh-chandak.com) · [LinkedIn](https://linkedin.com/in/hnchandak) · harshnchandak@gmail.com
+<p>
+<a href="https://harsh-chandak.com"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/link-site-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/link-site-light.svg"><img src="assets/link-site-light.svg" alt="harsh-chandak.com" height="34"></picture></a>
+<a href="https://linkedin.com/in/hnchandak"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/link-linkedin-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/link-linkedin-light.svg"><img src="assets/link-linkedin-light.svg" alt="LinkedIn" height="34"></picture></a>
+<a href="mailto:harshnchandak@gmail.com"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/link-email-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/link-email-light.svg"><img src="assets/link-email-light.svg" alt="Email" height="34"></picture></a>
+</p>

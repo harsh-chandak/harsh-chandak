@@ -19,8 +19,10 @@ on:
     paths:
       - "data/header.json"
       - "data/projects.json"
+      - "data/linkedin-projects.json"
       - "scripts/profile-cards.mjs"
       - "scripts/project-cards.mjs"
+      - "scripts/stats-cards.mjs"
       - ".github/workflows/profile-cards.yml"
   schedule:
     # 05:40 UTC. Deliberately not 12:00, when the WakaTime job commits to
@@ -58,6 +60,14 @@ jobs:
           # same public repository fields either way.
           GITHUB_TOKEN: ${{ github.token }}
         run: node scripts/project-cards.mjs --out assets
+
+      - name: Render activity, languages and link badges
+        env:
+          GH_USER: harsh-chandak
+          # The built-in token is scoped to this repository and cannot read
+          # private work, which is exactly what these cards should be counting.
+          GITHUB_TOKEN: ${{ github.token }}
+        run: node scripts/stats-cards.mjs --out assets
 
       - name: Commit if changed
         run: |
