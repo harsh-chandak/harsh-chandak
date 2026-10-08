@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="300" viewBox="0 0 900 300" role="img" aria-label="Harsh Chandak. AI/ML Software Engineer Intern, LLM Systems at Vantion. M.S. Computer Science, Arizona State · GPA 4.00 · Phoenix, Arizona. 0.999 eligibility precision. ~25% matches recovered. 17s→3.8s reranker median. 3,500 ATS boards crawled. 74% lower LLM cost. 20K+ req/day on ERP. Updated nightly: 2,625 contributions · 124 active days, 27.8B Claude Code tokens, 662 sessions, 2-day streak.">
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="300" viewBox="0 0 900 300" role="img" aria-label="Harsh Chandak. AI/ML Software Engineer Intern, LLM Systems at Vantion. M.S. Computer Science, Arizona State · GPA 4.00 · Phoenix, Arizona. 0.999 eligibility precision. ~25% matches recovered. 17s→3.8s reranker median. 3,500 ATS boards crawled. 74% lower LLM cost. 20K+ req/day on ERP. Updated nightly: 2,665 contributions · 125 active days, 27.9B Claude Code tokens, 662 sessions, 3-day streak.">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#17130f"/><stop offset="1" stop-color="#241c14"/>
@@ -36,5 +36,5 @@
     <text x="646" y="243" class="k">74%</text><text x="646" y="263" class="l">lower LLM cost</text>
     <text x="772" y="243" class="k">20K+</text><text x="772" y="263" class="l">req/day on ERP</text>
   </g>
-  <text x="50" y="288" class="l" opacity=".75">2,625 contributions · 124 active days  ·  27.8B Claude Code tokens  ·  662 sessions  ·  2-day streak</text>
+  <text x="50" y="288" class="l" opacity=".75">2,665 contributions · 125 active days  ·  27.9B Claude Code tokens  ·  662 sessions  ·  3-day streak</text>
 </svg>
