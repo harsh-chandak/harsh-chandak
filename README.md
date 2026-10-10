@@ -89,11 +89,11 @@ so this undercounts, and it measures where the time went rather than what came o
 <!--START_SECTION:waka-->
 
 ```text
-Other        4 hrs 41 mins         ███████████▓░░░░░░░░░░░░░   46.37 %
-JavaScript   2 hrs 39 mins         ██████▓░░░░░░░░░░░░░░░░░░   26.25 %
-Markdown     1 hr 54 mins          ████▓░░░░░░░░░░░░░░░░░░░░   18.91 %
-Text         47 mins               ██░░░░░░░░░░░░░░░░░░░░░░░   07.84 %
-YAML         3 mins                ░░░░░░░░░░░░░░░░░░░░░░░░░   00.63 %
+Other        4 hrs 57 mins         ███████████████▓░░░░░░░░░   62.07 %
+JavaScript   1 hr 52 mins          ██████░░░░░░░░░░░░░░░░░░░   23.44 %
+Text         46 mins               ██▒░░░░░░░░░░░░░░░░░░░░░░   09.59 %
+Markdown     21 mins               █░░░░░░░░░░░░░░░░░░░░░░░░   04.50 %
+YAML         1 min                 ░░░░░░░░░░░░░░░░░░░░░░░░░   00.41 %
 ```
 
 <!--END_SECTION:waka-->
