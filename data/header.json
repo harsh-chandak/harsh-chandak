@@ -1,15 +1,39 @@
 {
-  "_comment": "Facts for the header card. Edit this, not the SVG. scripts/profile-cards.mjs renders assets/header-{dark,light}.svg from it nightly and on every push to this file. The numbers trace to job-hunt/resume/bullets.yaml; keep them identical so the header, the resume and LinkedIn never disagree.",
+  "_comment": "Facts for the header card. Edit this, not the SVG. scripts/profile-cards.mjs renders assets/header-{dark,light}.svg from it nightly and on every push to this file. The numbers trace to job-hunt/resume/bullets.yaml; keep them identical so the header, the resume and LinkedIn never disagree. Updated 2026-10-15: role matches LinkedIn and the resume; 3,500 -> 3,547 (audited); the 74% LLM-cost stat is GONE because the bullet bank cut it as the one figure with no measurement behind it, and it had outlived that decision here. Replaced with shadowjoin's 428, which reproduces from data committed in that repo. The 428 sits in the x=500 slot and the boards count moved to x=646 on purpose: x positions are hand-placed and the gap after 646 is 126px, too narrow for a long label.",
   "badge": "OPEN TO SDE / AI ROLES",
   "name": "Harsh Chandak",
-  "role": "AI/ML Software Engineer Intern, LLM Systems at Vantion",
-  "meta": "M.S. Computer Science, Arizona State · GPA 4.00 · Phoenix, Arizona",
+  "role": "AI Software Engineer at Vantion",
+  "meta": "M.S. Computer Science, Arizona State \u00b7 GPA 4.00 \u00b7 Phoenix, Arizona",
   "stats": [
-    { "value": "0.999",    "label": "eligibility precision", "x": 50 },
-    { "value": "~25%",     "label": "matches recovered",     "x": 196 },
-    { "value": "17s→3.8s", "label": "reranker median",       "x": 330 },
-    { "value": "3,500",    "label": "ATS boards crawled",    "x": 500 },
-    { "value": "74%",      "label": "lower LLM cost",        "x": 646 },
-    { "value": "20K+",     "label": "req/day on ERP",        "x": 772 }
+    {
+      "value": "0.999",
+      "label": "eligibility precision",
+      "x": 50
+    },
+    {
+      "value": "~25%",
+      "label": "matches recovered",
+      "x": 196
+    },
+    {
+      "value": "17s\u21923.8s",
+      "label": "reranker median",
+      "x": 330
+    },
+    {
+      "value": "428",
+      "label": "join misses found",
+      "x": 500
+    },
+    {
+      "value": "3,547",
+      "label": "ATS boards",
+      "x": 646
+    },
+    {
+      "value": "20K+",
+      "label": "req/day on ERP",
+      "x": 772
+    }
   ]
 }
