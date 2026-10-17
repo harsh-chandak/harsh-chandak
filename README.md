@@ -1,7 +1,7 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/header-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/header-light.svg">
-  <img src="assets/header-dark.svg" alt="Harsh Chandak. AI/ML Software Engineer, LLM Systems at Vantion. M.S. Computer Science, Arizona State, GPA 4.00, Phoenix Arizona. Open to SDE and AI roles. 0.999 eligibility precision. ~25% of matches recovered. Reranker median from 17s to 3.8s. 3,500 ATS boards crawled. 74% lower LLM cost. 20K+ requests a day on an ERP.">
+  <img src="assets/header-dark.svg" alt="Harsh Chandak. AI Software Engineer at Vantion. M.S. Computer Science, Arizona State, GPA 4.00, Phoenix Arizona. Open to SDE and AI roles. 2 npm packages published. 0.999 eligibility precision. ~25% of matches recovered. Reranker median from 17s to 3.8s. 428 join misses found. 3,547 ATS boards crawled.">
 </picture>
 
 <sub>The contribution and Claude Code figures in the header are regenerated nightly from a <a href="https://gist.github.com/harsh-chandak/39e44bf9e8257251c0846690406ed283">public gist</a> of aggregates, whose revision history is the audit trail.</sub>
@@ -15,7 +15,7 @@ Most of it is unglamorous. Writing the harness before the feature. Keying a scor
 
 ### Now
 
-**Vantion** · Walnutech · AI/ML Software Engineer Intern, LLM Systems · May 2026 to now
+**Vantion** · AI Software Engineer · May 2026 to now
 
 I own matching: which scholarships a student is actually eligible for, and in what order.
 
@@ -37,7 +37,9 @@ Small team, so the surface is wide. I also isolated the parallel LangGraph advis
 
 | | |
 | --- | --- |
-| **[job-market-crawler](https://github.com/harsh-chandak/job-market-crawler)** | `3,500` ATS boards polled directly, `86%` of `1M+` polls skipped as unchanged, duplicates collapsed, everything ranked before a model is called. Cut LLM cost per document `74%`. |
+| **[concord-engine](https://github.com/harsh-chandak/concord-engine)** | Holds a fleet of coding agents to one set of decisions, so four workers cannot each answer the same question reasonably and differently. `103` unit tests, a `60`-case loop matrix, `12` MCP tools. On npm and in the MCP registry. |
+| **[shadowjoin](https://github.com/harsh-chandak/shadowjoin)** | Measures the matches an exact join is silently dropping. `428` recovered between the S&P 500 and NYSE/Nasdaq listings, `419` confirmed against ticker ground truth, precision `99.76%`. On npm and in the MCP registry. |
+| **[job-market-crawler](https://github.com/harsh-chandak/job-market-crawler)** | `3,547` ATS boards polled directly across `11` platforms, `85%` of `28K` daily polls skipped as unchanged, duplicates collapsed, everything ranked before a model is called. |
 | **[trustmed](https://github.com/harsh-chandak/trustmed)** | Drug knowledge assistant. Rasa and Neo4j, answering ingredient, generic and substitute questions by traversing a graph instead of matching text. |
 | **[zk-coldchain](https://github.com/harsh-chandak/zk-coldchain)** | Zero-knowledge proof that a shipment broke its temperature limit, without revealing the log. Circom and Solidity, with automatic payout. |
 | **[data-vis](https://github.com/harsh-chandak/data-vis)** | Linked D3 views over accident data. [Live](https://data-vis-0eqs.onrender.com/) |
@@ -47,11 +49,11 @@ Small team, so the surface is wide. I also isolated the parallel LangGraph advis
 
 ### Before
 
-**Arizona State University** · Software Engineer, AI Systems and Data Infrastructure · Aug 2025 to May 2026 · part-time alongside the M.S.
+**Arizona State University** · Software Engineer · Aug 2025 to May 2026 · part-time alongside the M.S.
 
 Built a `200`-input scoring harness first, then halved candidates per input while malformed outputs fell `~20%`. A LangGraph and WhisperX pipeline over `10K+` audio inputs. Telemetry ingestion at `2K+` events a day with idempotency and backpressure, P95 down `~45%`.
 
-**Neuromonk Infotech** · Software Engineer, Full-Stack and Product · Jan 2023 to May 2024
+**Neuromonk Infotech Pvt. Ltd.** · Full-stack Software Engineer · Jan 2023 to May 2024
 
 Owned four ERP modules used by `70+` manufacturing clients at `20K+` API requests a day. Rebuilt the accounting model for interstate GST; errors hit zero. Dashboards from `4-5s` to under `2s`. Live schema migrations in reversible stages, zero downtime, for clients whose factory floors run on the ERP.
 

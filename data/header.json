@@ -1,39 +1,39 @@
 {
-  "_comment": "Facts for the header card. Edit this, not the SVG. scripts/profile-cards.mjs renders assets/header-{dark,light}.svg from it nightly and on every push to this file. The numbers trace to job-hunt/resume/bullets.yaml; keep them identical so the header, the resume and LinkedIn never disagree. Updated 2026-10-15: role matches LinkedIn and the resume; 3,500 -> 3,547 (audited); the 74% LLM-cost stat is GONE because the bullet bank cut it as the one figure with no measurement behind it, and it had outlived that decision here. Replaced with shadowjoin's 428, which reproduces from data committed in that repo. The 428 sits in the x=500 slot and the boards count moved to x=646 on purpose: x positions are hand-placed and the gap after 646 is 126px, too narrow for a long label.",
+  "_comment": "Facts for the header card. Edit this, not the SVG. scripts/profile-cards.mjs renders assets/header-{dark,light}.svg from it nightly and on every push to this file. The numbers trace to job-hunt/resume/bullets.yaml; keep them identical so the header, the resume and LinkedIn never disagree. Updated 2026-10-17: added '2 npm packages' (shadowjoin 0.3.2 and concord-engine 0.3.1, both also listed in the MCP registry, each checked against the published tarball). The ERP req/day stat was dropped to make room; it is still on the resume. NO DOWNLOAD COUNT, deliberately and after checking: npm reports 747 for shadowjoin over the last month, of which 705 landed on publish day and 42 the day after, with zeros on every other day — that is registry propagation, not use. concord-engine has no download data at all yet. A usage number belongs here only when it reflects people choosing the package, and the API will say so plainly when that happens. x positions are hand-placed; respace the whole row if a label changes length.",
   "badge": "OPEN TO SDE / AI ROLES",
   "name": "Harsh Chandak",
   "role": "AI Software Engineer at Vantion",
-  "meta": "M.S. Computer Science, Arizona State \u00b7 GPA 4.00 \u00b7 Phoenix, Arizona",
+  "meta": "M.S. Computer Science, Arizona State · GPA 4.00 · Phoenix, Arizona",
   "stats": [
+    {
+      "value": "2",
+      "label": "npm packages",
+      "x": 50
+    },
     {
       "value": "0.999",
       "label": "eligibility precision",
-      "x": 50
+      "x": 150
     },
     {
       "value": "~25%",
       "label": "matches recovered",
-      "x": 196
+      "x": 300
     },
     {
-      "value": "17s\u21923.8s",
+      "value": "17s→3.8s",
       "label": "reranker median",
-      "x": 330
+      "x": 434
     },
     {
       "value": "428",
       "label": "join misses found",
-      "x": 500
+      "x": 604
     },
     {
       "value": "3,547",
       "label": "ATS boards",
-      "x": 646
-    },
-    {
-      "value": "20K+",
-      "label": "req/day on ERP",
-      "x": 772
+      "x": 750
     }
   ]
 }

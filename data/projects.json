@@ -1,6 +1,54 @@
 {
   "projects": [
     {
+      "slug": "concord-engine",
+      "kicker": "AGENT ORCHESTRATION",
+      "name": "Concord Engine",
+      "line": "Holds a fleet of coding agents to one set of decisions, so four workers cannot each answer the same question reasonably and differently.",
+      "hook_kicker": "NOTHING RED ANYWHERE",
+      "hook_line": "Four green test suites over a broken product, found at integration.",
+      "stats": [
+        {
+          "k": "103",
+          "l": "unit tests"
+        },
+        {
+          "k": "60",
+          "l": "case loop matrix"
+        },
+        {
+          "k": "12",
+          "l": "MCP tools"
+        }
+      ],
+      "stack": "TypeScript · Node · MCP · npm",
+      "note": "source: npm concord-engine 0.3.1 and MCP registry io.github.harsh-chandak/concord-engine 0.3.1, both checked 2026-10-17 against the published tarball. 103 = /^\\s*test\\(/ across test/*.test.js (contract 40, detect 20, lifecycle 6, logdir 7, routes 10, run 20); 60 = ok-sites in test/e2e-loop.sh, which matches its runtime count; 12 MCP tools asserted by name in test/mcp-smoke.mjs. NO download figure on purpose: npm reports none for this package yet."
+    },
+    {
+      "slug": "shadowjoin",
+      "kicker": "ENTITY RESOLUTION",
+      "name": "shadowjoin",
+      "line": "Measures the matches an exact join is silently dropping, and ranks the normalization rules that recover them.",
+      "hook_kicker": "A JOIN THAT LOOKS FINE",
+      "hook_line": "One exact match out of 503 rows. 428 were there all along.",
+      "stats": [
+        {
+          "k": "428",
+          "l": "matches recovered"
+        },
+        {
+          "k": "419",
+          "l": "confirmed by ticker"
+        },
+        {
+          "k": "99.76%",
+          "l": "precision"
+        }
+      ],
+      "stack": "TypeScript · Node · MCP · Postgres",
+      "note": "source: the scan that ships in the repo, S&P 500 against NYSE/Nasdaq listings: 503 left rows, 6,709 right, exact join 1, recovered 428, verified 419 correct / 1 wrong / 8 ambiguous. Every figure regenerates by running the script. npm shadowjoin 0.3.2. NO download figure: the 747 in npm's last-month window is 705 on publish day and 42 the day after, which is propagation, not use."
+    },
+    {
       "slug": "job-market-crawler",
       "kicker": "JOB PIPELINE",
       "name": "Job Market Crawler",
@@ -9,12 +57,12 @@
       "hook_line": "By the time a job reaches LinkedIn, you are late.",
       "stats": [
         {
-          "k": "3,500",
+          "k": "3,547",
           "l": "ATS boards polled"
         },
         {
-          "k": "86%",
-          "l": "of 1M+ polls skipped"
+          "k": "85%",
+          "l": "of 28K daily polls skipped"
         },
         {
           "k": "0",
@@ -22,7 +70,7 @@
         }
       ],
       "stack": "Node.js · MongoDB · conditional GET · Typst",
-      "note": "source: repo description and README; the 86% is the 304-not-modified share of all polls"
+      "note": "source: job-hunt DB 2026-09-28 via resume/bullets.yaml — 3,547 enabled boards across 11 ATS; poll_log 396,933 rows over a 14-day window (~28K/day), 336,864 not_modified (84.9%). Was 3,500 and '86% of 1M+ polls' here after the header had already been corrected to the audited figures."
     },
     {
       "slug": "trustmed",

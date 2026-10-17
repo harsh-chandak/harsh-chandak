@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640" role="img" aria-label="Job Market Crawler. Polls ATS boards directly and ranks every posting deterministically before it spends a single model call. 3,500 ATS boards polled. 86% of 1M+ polls skipped. 0 model calls to screen. Built with Node.js · MongoDB · conditional GET · Typst.">
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640" role="img" aria-label="Job Market Crawler. Polls ATS boards directly and ranks every posting deterministically before it spends a single model call. 3,547 ATS boards polled. 85% of 28K daily polls skipped. 0 model calls to screen. Built with Node.js · MongoDB · conditional GET · Typst.">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#17130f"/><stop offset="1" stop-color="#241c14"/>
@@ -28,10 +28,10 @@
 
   <line x1="50" y1="398" x2="1230" y2="398" stroke="#413326"/>
   <g>
-    <text x="50" y="458" class="k">3,500</text>
+    <text x="50" y="458" class="k">3,547</text>
     <text x="50" y="488" class="m">ATS boards polled</text>
-    <text x="443" y="458" class="k">86%</text>
-    <text x="443" y="488" class="m">of 1M+ polls skipped</text>
+    <text x="443" y="458" class="k">85%</text>
+    <text x="443" y="488" class="m">of 28K daily polls skipped</text>
     <text x="837" y="458" class="k">0</text>
     <text x="837" y="488" class="m">model calls to screen</text>
   </g>
