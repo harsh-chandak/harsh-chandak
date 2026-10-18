@@ -25,8 +25,8 @@ const CHECK = process.argv.includes("--check");
 const USER = process.env.GH_USER || "harsh-chandak";
 
 const THEMES = {
-  dark:  { bg0:"#17130f", bg1:"#241c14", line:"#413326", text:"#f6efe6", muted:"#b09b84", gold:"#f5a524" },
-  light: { bg0:"#fdf6e8", bg1:"#f6e9d4", line:"#e0cfb2", text:"#2f2417", muted:"#7b6750", gold:"#b26a00" },
+  dark:  { bg0:"#06080d", bg1:"#0e1420", line:"#1e2a3b", text:"#e8ecf7", muted:"#95a2c0", gold:"#f0b429" },
+  light: { bg0:"#edf2f9", bg1:"#dbe4f0", line:"#bdc9da", text:"#1a2338", muted:"#5a6684", gold:"#8a5e0a" },
 };
 
 const W = 1280, H = 640;
@@ -127,7 +127,7 @@ function render(p, meta, t) {
       <stop offset="0" stop-color="${t.bg0}"/><stop offset="1" stop-color="${t.bg1}"/>
     </linearGradient>
     <radialGradient id="glow" cx="80%" cy="4%" r="64%">
-      <stop offset="0" stop-color="${t.gold}" stop-opacity=".20"/>
+      <stop offset="0" stop-color="${t.gold}" stop-opacity=".085"/>
       <stop offset="1" stop-color="${t.gold}" stop-opacity="0"/>
     </radialGradient>
     <style>

@@ -1,32 +1,32 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="300" viewBox="0 0 900 300" role="img" aria-label="Harsh Chandak. AI Software Engineer at Vantion. M.S. Computer Science, Arizona State · GPA 4.00 · Phoenix, Arizona. 2 npm packages. 0.999 eligibility precision. ~25% matches recovered. 17s→3.8s reranker median. 428 join misses found. 3,547 ATS boards. Updated nightly: 2,826 contributions · 127 active days, 24.3B Claude Code tokens, 363 sessions, 13-day streak.">
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="300" viewBox="0 0 900 300" role="img" aria-label="Harsh Chandak. AI Software Engineer at Vantion. M.S. Computer Science, Arizona State · GPA 4.00 · Phoenix, Arizona. 2 npm packages. 0.999 eligibility precision. ~25% matches recovered. 17s→3.8s reranker median. 428 join misses found. 3,547 ATS boards. Updated nightly: 2,826 contributions · 127 active days.">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#17130f"/><stop offset="1" stop-color="#241c14"/>
+      <stop offset="0" stop-color="#06080d"/><stop offset="1" stop-color="#0e1420"/>
     </linearGradient>
     <radialGradient id="glow" cx="78%" cy="6%" r="62%">
-      <stop offset="0" stop-color="#f5a524" stop-opacity=".20"/>
-      <stop offset="1" stop-color="#f5a524" stop-opacity="0"/>
+      <stop offset="0" stop-color="#f0b429" stop-opacity=".085"/>
+      <stop offset="1" stop-color="#f0b429" stop-opacity="0"/>
     </radialGradient>
     <style>
-      .n { font: 700 46px -apple-system, "Segoe UI", Inter, sans-serif; letter-spacing:-1.6px; fill:#f6efe6 }
-      .r { font: 400 17.5px -apple-system, "Segoe UI", Inter, sans-serif; fill:#f6efe6; opacity:.9 }
-      .m { font: 400 13.5px -apple-system, "Segoe UI", Inter, sans-serif; fill:#b09b84 }
-      .k { font: 700 19px ui-monospace, SFMono-Regular, Menlo, monospace; fill:#f5a524 }
-      .l { font: 400 11px -apple-system, "Segoe UI", Inter, sans-serif; fill:#b09b84 }
+      .n { font: 700 46px -apple-system, "Segoe UI", Inter, sans-serif; letter-spacing:-1.6px; fill:#e8ecf7 }
+      .r { font: 400 17.5px -apple-system, "Segoe UI", Inter, sans-serif; fill:#e8ecf7; opacity:.9 }
+      .m { font: 400 13.5px -apple-system, "Segoe UI", Inter, sans-serif; fill:#95a2c0 }
+      .k { font: 700 19px ui-monospace, SFMono-Regular, Menlo, monospace; fill:#f0b429 }
+      .l { font: 400 11px -apple-system, "Segoe UI", Inter, sans-serif; fill:#95a2c0 }
     </style>
   </defs>
   <rect width="900" height="300" rx="14" fill="url(#bg)"/>
   <rect width="900" height="300" rx="14" fill="url(#glow)"/>
-  <rect x=".5" y=".5" width="899" height="299" rx="14" fill="none" stroke="#413326"/>
+  <rect x=".5" y=".5" width="899" height="299" rx="14" fill="none" stroke="#1e2a3b"/>
 
-  <circle cx="52" cy="52" r="5" fill="#f5a524"/>
+  <circle cx="52" cy="52" r="5" fill="#f0b429"/>
   <text x="68" y="57" class="l" letter-spacing="2.2">OPEN TO SDE / AI ROLES</text>
 
   <text x="50" y="126" class="n">Harsh Chandak</text>
   <text x="50" y="158" class="r">AI Software Engineer at Vantion</text>
   <text x="50" y="182" class="m">M.S. Computer Science, Arizona State · GPA 4.00 · Phoenix, Arizona</text>
 
-  <line x1="50" y1="208" x2="850" y2="208" stroke="#413326"/>
+  <line x1="50" y1="208" x2="850" y2="208" stroke="#1e2a3b"/>
 
   <g>
     <text x="50" y="243" class="k">2</text><text x="50" y="263" class="l">npm packages</text>
@@ -36,5 +36,5 @@
     <text x="604" y="243" class="k">428</text><text x="604" y="263" class="l">join misses found</text>
     <text x="750" y="243" class="k">3,547</text><text x="750" y="263" class="l">ATS boards</text>
   </g>
-  <text x="50" y="288" class="l" opacity=".75">2,826 contributions · 127 active days  ·  24.3B Claude Code tokens  ·  363 sessions  ·  13-day streak</text>
+  <text x="50" y="288" class="l" opacity=".75">2,826 contributions · 127 active days</text>
 </svg>

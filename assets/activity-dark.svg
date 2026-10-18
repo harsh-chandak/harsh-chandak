@@ -1,19 +1,19 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="190" viewBox="0 0 900 190" role="img" aria-label="Public GitHub activity: 2,826 contributions, last year, 127 days with a commit, 25 longest streak, days, 8 public repositories.">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#17130f"/><stop offset="1" stop-color="#241c14"/></linearGradient>
-    <radialGradient id="glow" cx="82%" cy="6%" r="64%"><stop offset="0" stop-color="#f5a524" stop-opacity=".18"/><stop offset="1" stop-color="#f5a524" stop-opacity="0"/></radialGradient>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#06080d"/><stop offset="1" stop-color="#0e1420"/></linearGradient>
+    <radialGradient id="glow" cx="82%" cy="6%" r="64%"><stop offset="0" stop-color="#f0b429" stop-opacity=".08"/><stop offset="1" stop-color="#f0b429" stop-opacity="0"/></radialGradient>
     <style>
-      .k { font: 700 30px ui-monospace, SFMono-Regular, Menlo, monospace; fill:#f5a524 }
-      .m { font: 400 13px -apple-system, "Segoe UI", Inter, sans-serif; fill:#b09b84 }
-      .l { font: 400 11px -apple-system, "Segoe UI", Inter, sans-serif; fill:#b09b84 }
+      .k { font: 700 30px ui-monospace, SFMono-Regular, Menlo, monospace; fill:#f0b429 }
+      .m { font: 400 13px -apple-system, "Segoe UI", Inter, sans-serif; fill:#95a2c0 }
+      .l { font: 400 11px -apple-system, "Segoe UI", Inter, sans-serif; fill:#95a2c0 }
     </style>
   </defs>
   <rect width="900" height="190" rx="14" fill="url(#bg)"/>
   <rect width="900" height="190" rx="14" fill="url(#glow)"/>
-  <rect x=".5" y=".5" width="899" height="189" rx="14" fill="none" stroke="#413326"/>
-  <circle cx="52" cy="40" r="5" fill="#f5a524"/>
+  <rect x=".5" y=".5" width="899" height="189" rx="14" fill="none" stroke="#1e2a3b"/>
+  <circle cx="52" cy="40" r="5" fill="#f0b429"/>
   <text x="68" y="45" class="l" letter-spacing="2.2">ACTIVITY, PUBLIC REPOSITORIES ONLY</text>
-  <line x1="50" y1="70" x2="850" y2="70" stroke="#413326"/>
+  <line x1="50" y1="70" x2="850" y2="70" stroke="#1e2a3b"/>
   <text x="50" y="124" class="k">2,826</text>
   <text x="50" y="150" class="m">contributions, last year</text>
   <text x="250" y="124" class="k">127</text>

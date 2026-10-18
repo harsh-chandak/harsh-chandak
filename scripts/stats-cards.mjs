@@ -29,8 +29,8 @@ const CHECK = process.argv.includes("--check");
 const USER = process.env.GH_USER || "harsh-chandak";
 
 const THEMES = {
-  dark:  { bg0:"#17130f", bg1:"#241c14", line:"#413326", text:"#f6efe6", muted:"#b09b84", gold:"#f5a524" },
-  light: { bg0:"#fdf6e8", bg1:"#f6e9d4", line:"#e0cfb2", text:"#2f2417", muted:"#7b6750", gold:"#b26a00" },
+  dark:  { bg0:"#06080d", bg1:"#0e1420", line:"#1e2a3b", text:"#e8ecf7", muted:"#95a2c0", gold:"#f0b429" },
+  light: { bg0:"#edf2f9", bg1:"#dbe4f0", line:"#bdc9da", text:"#1a2338", muted:"#5a6684", gold:"#8a5e0a" },
 };
 
 const esc = (s) => String(s ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
@@ -99,10 +99,17 @@ async function languages() {
 
 // A fixed palette so a language keeps its colour between runs. Anything beyond
 // the list falls back to the muted tone rather than picking a random hue.
+// An ice ramp, not an amber one. The old map was eleven shades of gold, which
+// made the languages bar the warmest thing on the profile at exactly the moment
+// amber was reserved for a single signal. These are ordered by lightness as
+// well as hue, so the bar still reads as distinct bands in greyscale and for
+// anyone who cannot separate them by colour — the two brightest go to the two
+// languages that actually dominate the bar.
 const LANG_COLORS = {
-  JavaScript: "#f5a524", Python: "#d98324", HTML: "#b26a00", Shell: "#8a6a3d",
-  Solidity: "#c99a4e", Prolog: "#e0b36a", CSS: "#a07c45", Circom: "#d9c08a",
-  Dockerfile: "#7b6750", TypeScript: "#eab54a", Jupyter_Notebook: "#c08a3e",
+  TypeScript: "#9fd3ff", JavaScript: "#6fb2e8", Python: "#4f8fd0",
+  HTML: "#3d6fa8", CSS: "#5f7fa8", Shell: "#44617f",
+  Solidity: "#7fa8c8", Prolog: "#8fc0d8", Circom: "#b0d6e8",
+  Jupyter_Notebook: "#5a6f8f", Dockerfile: "#3a4f6b",
 };
 
 function activityCard(live, repo, t) {
@@ -118,7 +125,7 @@ function activityCard(live, repo, t) {
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(alt)}">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="${t.bg0}"/><stop offset="1" stop-color="${t.bg1}"/></linearGradient>
-    <radialGradient id="glow" cx="82%" cy="6%" r="64%"><stop offset="0" stop-color="${t.gold}" stop-opacity=".18"/><stop offset="1" stop-color="${t.gold}" stop-opacity="0"/></radialGradient>
+    <radialGradient id="glow" cx="82%" cy="6%" r="64%"><stop offset="0" stop-color="${t.gold}" stop-opacity=".08"/><stop offset="1" stop-color="${t.gold}" stop-opacity="0"/></radialGradient>
     <style>
       .k { font: 700 30px ui-monospace, SFMono-Regular, Menlo, monospace; fill:${t.gold} }
       .m { font: 400 13px -apple-system, "Segoe UI", Inter, sans-serif; fill:${t.muted} }
