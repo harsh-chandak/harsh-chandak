@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="300" viewBox="0 0 900 300" role="img" aria-label="Harsh Chandak. AI Software Engineer at Vantion. M.S. Computer Science, Arizona State · GPA 4.00 · Phoenix, Arizona. 2 npm packages. 0.999 eligibility precision. ~25% matches recovered. 17s→3.8s reranker median. 428 join misses found. 3,547 ATS boards. Updated nightly: 2,827 contributions · 128 active days, 24.4B Claude Code tokens, 363 sessions, 14-day streak.">
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="300" viewBox="0 0 900 300" role="img" aria-label="Harsh Chandak. AI Software Engineer at Vantion. M.S. Computer Science, Arizona State · GPA 4.00 · Phoenix, Arizona. 2 npm packages. 0.999 eligibility precision. ~25% matches recovered. 17s→3.8s reranker median. 428 join misses found. 3,547 ATS boards. Updated nightly: 2,829 contributions · 129 active days, 24.4B Claude Code tokens, 362 sessions, 15-day streak.">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#edf2f9"/><stop offset="1" stop-color="#dbe4f0"/>
@@ -36,5 +36,5 @@
     <text x="604" y="243" class="k">428</text><text x="604" y="263" class="l">join misses found</text>
     <text x="750" y="243" class="k">3,547</text><text x="750" y="263" class="l">ATS boards</text>
   </g>
-  <text x="50" y="288" class="l" opacity=".75">2,827 contributions · 128 active days  ·  24.4B Claude Code tokens  ·  363 sessions  ·  14-day streak</text>
+  <text x="50" y="288" class="l" opacity=".75">2,829 contributions · 129 active days  ·  24.4B Claude Code tokens  ·  362 sessions  ·  15-day streak</text>
 </svg>
