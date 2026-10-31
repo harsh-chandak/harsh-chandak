@@ -91,12 +91,12 @@ so this undercounts, and it measures where the time went rather than what came o
 <!--START_SECTION:waka-->
 
 ```text
-Other        12 hrs 42 mins        ███████████████████░░░░░░   75.56 %
-JavaScript   2 hrs 29 mins         ███▓░░░░░░░░░░░░░░░░░░░░░   14.86 %
-TypeScript   1 hr 6 mins           █▓░░░░░░░░░░░░░░░░░░░░░░░   06.59 %
-YAML         24 mins               ▓░░░░░░░░░░░░░░░░░░░░░░░░   02.47 %
-JSON         3 mins                ░░░░░░░░░░░░░░░░░░░░░░░░░   00.32 %
-HTML         2 mins                ░░░░░░░░░░░░░░░░░░░░░░░░░   00.20 %
+Other        5 hrs 34 mins         ████████████░░░░░░░░░░░░░   48.28 %
+JavaScript   3 hrs 29 mins         ███████▓░░░░░░░░░░░░░░░░░   30.19 %
+TypeScript   1 hr 6 mins           ██▒░░░░░░░░░░░░░░░░░░░░░░   09.61 %
+HTML         39 mins               █▒░░░░░░░░░░░░░░░░░░░░░░░   05.66 %
+YAML         24 mins               █░░░░░░░░░░░░░░░░░░░░░░░░   03.60 %
+Python       13 mins               ▒░░░░░░░░░░░░░░░░░░░░░░░░   01.98 %
 ```
 
 <!--END_SECTION:waka-->
