@@ -1,0 +1,9 @@
+{
+  "_comment": "Packages counted by scripts/npm-downloads.mjs. Add a line when you publish one; the script reports anything npm lists under the maintainer that is missing here, but will not count it, because a search-index gap must not silently change a published total.",
+  "packages": [
+    "concord-engine",
+    "shadowjoin",
+    "concord-engine-mcp",
+    "shadowjoin-mcp"
+  ]
+}

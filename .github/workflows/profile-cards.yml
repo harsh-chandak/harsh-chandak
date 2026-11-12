@@ -18,11 +18,13 @@ on:
     branches: [main]
     paths:
       - "data/header.json"
+      - "data/npm-packages.json"
       - "data/projects.json"
       - "data/linkedin-projects.json"
       - "scripts/profile-cards.mjs"
       - "scripts/project-cards.mjs"
       - "scripts/stats-cards.mjs"
+      - "scripts/npm-downloads.mjs"
       - ".github/workflows/profile-cards.yml"
   schedule:
     # 05:40 UTC. Deliberately not 12:00, when the WakaTime job commits to
@@ -44,6 +46,14 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: "22"
+
+      # Before the cards render, so a card can read data/npm-downloads.json in
+      # the same run it was refreshed. npm has no lifetime endpoint and clamps
+      # any window wider than ~18 months without erroring, so this sums daily
+      # series in chunks; see the script header. If npm is unreachable it throws
+      # and this job goes red with the last good figures still committed.
+      - name: Refresh npm download figures
+        run: node scripts/npm-downloads.mjs --out data
 
       - name: Render
         env:
@@ -71,12 +81,12 @@ jobs:
 
       - name: Commit if changed
         run: |
-          if [[ -z "$(git status --porcelain assets)" ]]; then
-            echo "cards unchanged"; exit 0
+          if [[ -z "$(git status --porcelain assets data)" ]]; then
+            echo "cards and figures unchanged"; exit 0
           fi
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets
+          git add assets data
           git commit -m "Profile cards: refresh live figures"
           # Concurrency queues a second run but does not re-checkout it, so a
           # queued run pushes from a ref that is already stale and is rejected.
