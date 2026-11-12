@@ -70,6 +70,19 @@ async function claudeStats() {
   return { tokens: d.tokens?.total ?? null, sessions: d.sessions ?? null, streak: d.current_streak ?? d.streak ?? null };
 }
 
+/**
+ * Lifetime npm downloads, from data/npm-downloads.json, which the workflow
+ * refreshes earlier in the same run. Read from disk rather than the API so the
+ * card cannot disagree with the committed figure, and omitted when the file is
+ * absent — a card that invents a number is worse than one that omits it.
+ */
+async function npmDownloads() {
+  const f = resolve(ROOT, "data/npm-downloads.json");
+  if (!existsSync(f)) return null;
+  const d = JSON.parse(await readFile(f, "utf8"));
+  return typeof d.total === "number" ? { total: d.total, tail: d.tail, asOf: d.asOf } : null;
+}
+
 function render(cfg, live, t) {
   const cells = cfg.stats.map((s) =>
     `    <text x="${s.x}" y="243" class="k">${esc(s.value)}</text><text x="${s.x}" y="263" class="l">${esc(s.label)}</text>`
@@ -79,6 +92,11 @@ function render(cfg, live, t) {
   // number is worse than a card that omits one.
   const bits = [];
   if (live.contributions) bits.push(`${live.contributions.total.toLocaleString()} contributions · ${live.contributions.activeDays} active days`);
+  // The raw total, which is what npm and shields.io report. About three
+  // quarters of it is publish-day registry propagation rather than people
+  // choosing the package; data/npm-downloads.json carries the post-launch
+  // figure beside it and header.json records that this was a deliberate pick.
+  if (live.npm?.total) bits.push(`${live.npm.total.toLocaleString()} npm downloads`);
   if (live.claude?.tokens) bits.push(`${compact(live.claude.tokens)} Claude Code tokens`);
   if (live.claude?.sessions) bits.push(`${live.claude.sessions} sessions`);
   if (live.claude?.streak) bits.push(`${live.claude.streak}-day streak`);
@@ -130,7 +148,7 @@ ${strip}</svg>
 }
 
 const cfg = JSON.parse(await readFile(resolve(ROOT, "data/header.json"), "utf8"));
-const live = { contributions: await contributions(), claude: await claudeStats() };
+const live = { contributions: await contributions(), claude: await claudeStats(), npm: await npmDownloads() };
 
 let changed = 0;
 for (const [name, t] of Object.entries(THEMES)) {
