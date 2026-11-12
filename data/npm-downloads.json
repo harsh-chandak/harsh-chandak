@@ -6,7 +6,7 @@
   "launchWindowDays": 7,
   "total": 2222,
   "tail": 420,
-  "packageCount": 4,
+  "packageCount": 2,
   "packages": [
     {
       "name": "concord-engine",
@@ -39,32 +39,10 @@
       "top3SharePct": 75.7,
       "daysWithDownloads": 27,
       "daysObserved": 32
-    },
-    {
-      "name": "concord-engine-mcp",
-      "firstPublish": "2026-11-12",
-      "countedFrom": "2026-11-12",
-      "latest": "0.4.0",
-      "total": 0,
-      "tail": 0,
-      "tailFrom": "2026-11-19",
-      "biggestDay": null,
-      "top3SharePct": null,
-      "daysWithDownloads": 0,
-      "daysObserved": 0
-    },
-    {
-      "name": "shadowjoin-mcp",
-      "firstPublish": "2026-11-12",
-      "countedFrom": "2026-11-12",
-      "latest": "0.4.0",
-      "total": 0,
-      "tail": 0,
-      "tailFrom": "2026-11-19",
-      "biggestDay": null,
-      "top3SharePct": null,
-      "daysWithDownloads": 0,
-      "daysObserved": 0
     }
+  ],
+  "unlistedOnNpm": [
+    "shadowjoin-mcp",
+    "concord-engine-mcp"
   ]
 }
