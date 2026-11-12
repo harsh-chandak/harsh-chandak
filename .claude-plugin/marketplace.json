@@ -1,0 +1,30 @@
+{
+  "name": "harsh-chandak",
+  "description": "Tools for failures that don't raise errors.",
+  "owner": {
+    "name": "Harsh N. Chandak",
+    "url": "https://harsh-chandak.com"
+  },
+  "plugins": [
+    {
+      "name": "concord-engine",
+      "source": {
+        "source": "github",
+        "repo": "harsh-chandak/concord-engine"
+      },
+      "description": "Scale parallelism. Preserve alignment. Hold a fleet of coding agents to one set of decisions."
+    },
+    {
+      "name": "shadowjoin",
+      "source": {
+        "source": "github",
+        "repo": "harsh-chandak/shadowjoin"
+      },
+      "description": "Measure the matches your exact join is silently dropping, and get the rule that recovers each one."
+    }
+  ],
+  "renames": {
+    "agentguard": "concord-engine",
+    "orchestraguard": "concord-engine"
+  }
+}
