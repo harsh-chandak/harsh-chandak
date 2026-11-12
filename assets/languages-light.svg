@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="160" viewBox="0 0 900 160" role="img" aria-label="Languages across every public repository, measured in bytes by GitHub Linguist: JavaScript 54.2%, TypeScript 36.0%, Python 3.5%, Shell 2.4%, HTML 1.8%, Solidity 0.8%, Prolog 0.8%, CSS 0.3%, Other 0.1%.">
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="160" viewBox="0 0 900 160" role="img" aria-label="Languages across every public repository, measured in bytes by GitHub Linguist: JavaScript 54.6%, TypeScript 36.5%, Python 3.2%, Shell 2.2%, HTML 1.7%, Solidity 0.7%, Prolog 0.7%, CSS 0.3%, Other 0.1%.">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#edf2f9"/><stop offset="1" stop-color="#dbe4f0"/></linearGradient>
     <clipPath id="r"><rect x="50" y="72" width="800" height="14" rx="7"/></clipPath>
@@ -12,24 +12,24 @@
   <circle cx="52" cy="40" r="5" fill="#8a5e0a"/>
   <text x="68" y="45" class="l" letter-spacing="2.2">LANGUAGES BY BYTES, LINGUIST</text>
   <g clip-path="url(#r)">
-  <rect x="50.0" y="72" width="434.0" height="14" fill="#6fb2e8"/>
-  <rect x="484.0" y="72" width="288.2" height="14" fill="#9fd3ff"/>
-  <rect x="772.2" y="72" width="27.9" height="14" fill="#4f8fd0"/>
-  <rect x="800.1" y="72" width="19.3" height="14" fill="#44617f"/>
-  <rect x="819.4" y="72" width="14.6" height="14" fill="#3d6fa8"/>
-  <rect x="834.0" y="72" width="6.5" height="14" fill="#7fa8c8"/>
-  <rect x="840.5" y="72" width="6.3" height="14" fill="#8fc0d8"/>
-  <rect x="846.7" y="72" width="2.6" height="14" fill="#5f7fa8"/>
-  <rect x="849.3" y="72" width="2.0" height="14" fill="#5a6684"/>
+  <rect x="50.0" y="72" width="436.9" height="14" fill="#6fb2e8"/>
+  <rect x="486.9" y="72" width="291.8" height="14" fill="#9fd3ff"/>
+  <rect x="778.8" y="72" width="25.6" height="14" fill="#4f8fd0"/>
+  <rect x="804.3" y="72" width="17.7" height="14" fill="#44617f"/>
+  <rect x="822.0" y="72" width="13.3" height="14" fill="#3d6fa8"/>
+  <rect x="835.3" y="72" width="5.9" height="14" fill="#7fa8c8"/>
+  <rect x="841.3" y="72" width="5.7" height="14" fill="#8fc0d8"/>
+  <rect x="847.0" y="72" width="2.4" height="14" fill="#5f7fa8"/>
+  <rect x="849.4" y="72" width="2.0" height="14" fill="#5a6684"/>
   </g>
   <circle cx="55" cy="116" r="5" fill="#6fb2e8"/>
-  <text x="68" y="121" class="m">JavaScript 54.2%</text>
+  <text x="68" y="121" class="m">JavaScript 54.6%</text>
   <circle cx="215" cy="116" r="5" fill="#9fd3ff"/>
-  <text x="228" y="121" class="m">TypeScript 36.0%</text>
+  <text x="228" y="121" class="m">TypeScript 36.5%</text>
   <circle cx="375" cy="116" r="5" fill="#4f8fd0"/>
-  <text x="388" y="121" class="m">Python 3.5%</text>
+  <text x="388" y="121" class="m">Python 3.2%</text>
   <circle cx="535" cy="116" r="5" fill="#44617f"/>
-  <text x="548" y="121" class="m">Shell 2.4%</text>
+  <text x="548" y="121" class="m">Shell 2.2%</text>
   <circle cx="695" cy="116" r="5" fill="#3d6fa8"/>
-  <text x="708" y="121" class="m">HTML 1.8%</text>
+  <text x="708" y="121" class="m">HTML 1.7%</text>
 </svg>
