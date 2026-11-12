@@ -4,9 +4,9 @@
   "source": "api.npmjs.org/downloads (daily series, summed) + registry.npmjs.org for first-publish dates",
   "method": "contiguous windows of at most 540 days from each package's first publish, because the downloads API clamps any wider window to about 18 months and reports the clamped one without erroring; each window's daily series is checked against the point total for the same window",
   "launchWindowDays": 7,
-  "total": 2222,
-  "tail": 420,
-  "packageCount": 2,
+  "total": 3411,
+  "tail": 501,
+  "packageCount": 3,
   "packages": [
     {
       "name": "concord-engine",
@@ -39,10 +39,22 @@
       "top3SharePct": 75.7,
       "daysWithDownloads": 27,
       "daysObserved": 32
+    },
+    {
+      "name": "orchestraguard",
+      "firstPublish": "2026-10-16",
+      "countedFrom": "2026-10-16",
+      "latest": "0.2.2",
+      "total": 1189,
+      "tail": 81,
+      "tailFrom": "2026-10-23",
+      "biggestDay": {
+        "day": "2026-10-16",
+        "downloads": 896
+      },
+      "top3SharePct": 91.8,
+      "daysWithDownloads": 24,
+      "daysObserved": 27
     }
-  ],
-  "unlistedOnNpm": [
-    "shadowjoin-mcp",
-    "concord-engine-mcp"
   ]
 }

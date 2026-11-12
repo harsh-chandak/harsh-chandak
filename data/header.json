@@ -1,13 +1,13 @@
 {
-  "_comment": "Facts for the header card. Edit this, not the SVG. scripts/profile-cards.mjs renders assets/header-{dark,light}.svg from it nightly and on every push to this file. The numbers trace to job-hunt/resume/bullets.yaml; keep them identical so the header, the resume and LinkedIn never disagree. Updated 2026-10-17: added '2 npm packages' (shadowjoin 0.3.2 and concord-engine 0.3.1, both also listed in the MCP registry, each checked against the published tarball). The ERP req/day stat was dropped to make room; it is still on the resume. DOWNLOAD COUNT, as of 2026-11-12: the live strip carries the lifetime npm total, currently 2,222, refreshed nightly from data/npm-downloads.json. This reverses the rule written here on 2026-10-17, and the reason that rule existed has NOT gone away — about three quarters of the total is still publish-day registry propagation (523 of concord-engine's first 1,010 and 705 of shadowjoin's 1,212, with the top three days ~75% of each). Harsh chose the raw total on 2026-11-12 over the post-launch figure, which is 420 and is the number that would survive the old rule; both are computed and both are in data/npm-downloads.json, so switching the card to the honest one is a one-line change in profile-cards.mjs. Do not describe the total as adoption, usage, or users anywhere it appears. It is in the live strip rather than the hand-placed stats row so it updates nightly without respacing. STALE: the row still says 2 npm packages; four are published since the concord-engine-mcp and shadowjoin-mcp launchers shipped 2026-11-12, and the two launchers are plumbing rather than tools, so the right number here is a judgement Harsh should make. x positions are hand-placed; respace the whole row if a label changes length.",
+  "_comment": "Facts for the header card. Edit this, not the SVG. scripts/profile-cards.mjs renders assets/header-{dark,light}.svg from it nightly and on every push to this file. The numbers trace to job-hunt/resume/bullets.yaml; keep them identical so the header, the resume and LinkedIn never disagree. Updated 2026-11-12: '2 npm packages' is gone and the ERP figure it displaced is back — 70+ manufacturers running his ERP modules, from bullets.yaml, same source as the rest of the row. A package count is a fact about him; a count of the businesses depending on the work is a fact about its reach, and the row only has six slots. DOWNLOAD COUNT, as of 2026-11-12: the stats row carries the lifetime npm total as the placeholder {{npmDownloads}}, which profile-cards.mjs fills from data/npm-downloads.json at render time so it is never a number typed into this file. It counts concord-engine, shadowjoin and orchestraguard — orchestraguard being concord-engine's former name, same project renamed, which is why its history counts. It replaced the 428 join-misses figure, which still appears in shadowjoin's own description where it belongs. This reverses the rule written here on 2026-10-17, and the reason that rule existed has NOT gone away — about three quarters of the total is still publish-day registry propagation (523 of concord-engine's first 1,010 and 705 of shadowjoin's 1,212, with the top three days ~75% of each). Harsh chose the raw total on 2026-11-12 over the post-launch figure, which is 420 and is the number that would survive the old rule; both are computed and both are in data/npm-downloads.json, so switching the card to the honest one is a one-line change in profile-cards.mjs. Do not describe the total as adoption, usage, or users anywhere it appears. It is in the live strip rather than the hand-placed stats row so it updates nightly without respacing.  x positions are hand-placed; respace the whole row if a label changes length.",
   "badge": "OPEN TO SDE / AI ROLES",
   "name": "Harsh Chandak",
   "role": "AI Software Engineer at Vantion",
   "meta": "M.S. Computer Science, Arizona State · GPA 4.00 · Phoenix, Arizona",
   "stats": [
     {
-      "value": "2",
-      "label": "npm packages",
+      "value": "70+",
+      "label": "manufacturers",
       "x": 50
     },
     {
@@ -26,8 +26,8 @@
       "x": 434
     },
     {
-      "value": "428",
-      "label": "join misses found",
+      "value": "{{npmDownloads}}",
+      "label": "npm downloads",
       "x": 604
     },
     {

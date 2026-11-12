@@ -84,7 +84,17 @@ async function npmDownloads() {
 }
 
 function render(cfg, live, t) {
-  const cells = cfg.stats.map((s) =>
+  // {{npmDownloads}} is filled here rather than written into header.json, so
+  // the row cannot freeze at whatever the total was the day someone typed it.
+  // A stat whose placeholder cannot be filled is dropped rather than rendered
+  // with the braces showing.
+  const filled = cfg.stats
+    .map((s) => (s.value === "{{npmDownloads}}"
+      ? (live.npm?.total ? { ...s, value: live.npm.total.toLocaleString() } : null)
+      : s))
+    .filter(Boolean);
+
+  const cells = filled.map((s) =>
     `    <text x="${s.x}" y="243" class="k">${esc(s.value)}</text><text x="${s.x}" y="263" class="l">${esc(s.label)}</text>`
   ).join("\n");
 
@@ -92,11 +102,7 @@ function render(cfg, live, t) {
   // number is worse than a card that omits one.
   const bits = [];
   if (live.contributions) bits.push(`${live.contributions.total.toLocaleString()} contributions · ${live.contributions.activeDays} active days`);
-  // The raw total, which is what npm and shields.io report. About three
-  // quarters of it is publish-day registry propagation rather than people
-  // choosing the package; data/npm-downloads.json carries the post-launch
-  // figure beside it and header.json records that this was a deliberate pick.
-  if (live.npm?.total) bits.push(`${live.npm.total.toLocaleString()} npm downloads`);
+  // npm downloads live in the stats row above, not here.
   if (live.claude?.tokens) bits.push(`${compact(live.claude.tokens)} Claude Code tokens`);
   if (live.claude?.sessions) bits.push(`${live.claude.sessions} sessions`);
   if (live.claude?.streak) bits.push(`${live.claude.streak}-day streak`);
@@ -107,7 +113,7 @@ function render(cfg, live, t) {
     ? `  <text x="50" y="288" class="l" opacity=".75">${esc(bits.join("  ·  "))}</text>\n`
     : "";
 
-  const alt = `${cfg.name}. ${cfg.role}. ${cfg.meta}. ${cfg.stats.map((s) => `${s.value} ${s.label}`).join(". ")}.`
+  const alt = `${cfg.name}. ${cfg.role}. ${cfg.meta}. ${filled.map((s) => `${s.value} ${s.label}`).join(". ")}.`
     + (bits.length ? ` Updated nightly: ${bits.join(", ")}.` : "");
 
   return `<svg xmlns="http://www.w3.org/2000/svg" width="900" height="300" viewBox="0 0 900 300" role="img" aria-label="${esc(alt)}">

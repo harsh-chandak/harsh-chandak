@@ -1,7 +1,8 @@
 {
-  "_comment": "Packages counted by scripts/npm-downloads.mjs. Add a line when you publish one; the script reports anything npm lists under the maintainer that is missing here, but will not count it, because a search-index gap must not silently change a published total. The concord-engine-mcp and shadowjoin-mcp launchers were published 2026-11-12 and withdrawn the same day, so they are not listed: a package that no longer exists 404s at registry.npmjs.org and the script throws rather than counting it as zero.",
+  "_comment": "Packages counted by scripts/npm-downloads.mjs. Add a line when you publish one; the script reports anything npm lists under the maintainer that is missing here, but will not count it, because a search-index gap must not silently change a published total. orchestraguard is concord-engine's former name — same project, renamed on 2026-10-17 — and is deprecated rather than unpublished, so npm still serves its download history and it counts toward the lifetime total. The concord-engine-mcp and shadowjoin-mcp launchers were published and withdrawn on 2026-11-12 with zero downloads; they are unpublished, so the registry 404s them and the script would throw.",
   "packages": [
     "concord-engine",
-    "shadowjoin"
+    "shadowjoin",
+    "orchestraguard"
   ]
 }
