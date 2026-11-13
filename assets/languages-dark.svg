@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="160" viewBox="0 0 900 160" role="img" aria-label="Languages across every public repository, measured in bytes by GitHub Linguist: JavaScript 54.8%, TypeScript 36.3%, Python 3.2%, Shell 2.2%, HTML 1.7%, Solidity 0.7%, Prolog 0.7%, CSS 0.3%, Other 0.1%.">
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="160" viewBox="0 0 900 160" role="img" aria-label="Languages across every public repository, measured in bytes by GitHub Linguist: JavaScript 54.9%, TypeScript 36.3%, Python 3.2%, Shell 2.2%, HTML 1.7%, Solidity 0.7%, Prolog 0.7%, CSS 0.3%, Other 0.1%.">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#06080d"/><stop offset="1" stop-color="#0e1420"/></linearGradient>
     <clipPath id="r"><rect x="50" y="72" width="800" height="14" rx="7"/></clipPath>
@@ -12,18 +12,18 @@
   <circle cx="52" cy="40" r="5" fill="#f0b429"/>
   <text x="68" y="45" class="l" letter-spacing="2.2">LANGUAGES BY BYTES, LINGUIST</text>
   <g clip-path="url(#r)">
-  <rect x="50.0" y="72" width="438.6" height="14" fill="#6fb2e8"/>
-  <rect x="488.6" y="72" width="290.5" height="14" fill="#9fd3ff"/>
-  <rect x="779.1" y="72" width="25.4" height="14" fill="#4f8fd0"/>
-  <rect x="804.5" y="72" width="17.6" height="14" fill="#44617f"/>
-  <rect x="822.1" y="72" width="13.3" height="14" fill="#3d6fa8"/>
+  <rect x="50.0" y="72" width="439.0" height="14" fill="#6fb2e8"/>
+  <rect x="489.0" y="72" width="290.2" height="14" fill="#9fd3ff"/>
+  <rect x="779.2" y="72" width="25.4" height="14" fill="#4f8fd0"/>
+  <rect x="804.6" y="72" width="17.6" height="14" fill="#44617f"/>
+  <rect x="822.2" y="72" width="13.3" height="14" fill="#3d6fa8"/>
   <rect x="835.4" y="72" width="5.9" height="14" fill="#7fa8c8"/>
   <rect x="841.3" y="72" width="5.7" height="14" fill="#8fc0d8"/>
   <rect x="847.0" y="72" width="2.4" height="14" fill="#5f7fa8"/>
   <rect x="849.4" y="72" width="2.0" height="14" fill="#95a2c0"/>
   </g>
   <circle cx="55" cy="116" r="5" fill="#6fb2e8"/>
-  <text x="68" y="121" class="m">JavaScript 54.8%</text>
+  <text x="68" y="121" class="m">JavaScript 54.9%</text>
   <circle cx="215" cy="116" r="5" fill="#9fd3ff"/>
   <text x="228" y="121" class="m">TypeScript 36.3%</text>
   <circle cx="375" cy="116" r="5" fill="#4f8fd0"/>
