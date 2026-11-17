@@ -9,7 +9,7 @@
       "hook_line": "Four green test suites over a broken product, found at integration.",
       "stats": [
         {
-          "k": "103",
+          "k": "111",
           "l": "unit tests"
         },
         {
@@ -22,7 +22,7 @@
         }
       ],
       "stack": "TypeScript · Node · MCP · npm",
-      "note": "source: npm concord-engine 0.3.1 and MCP registry io.github.harsh-chandak/concord-engine 0.3.1, both checked 2026-10-17 against the published tarball. 103 = /^\\s*test\\(/ across test/*.test.js (contract 40, detect 20, lifecycle 6, logdir 7, routes 10, run 20); 60 = ok-sites in test/e2e-loop.sh, which matches its runtime count; 12 MCP tools asserted by name in test/mcp-smoke.mjs. NO download figure on purpose: npm reports none for this package yet."
+      "note": "source: npm concord-engine 0.3.2 and MCP registry io.github.harsh-chandak/concord-engine, both re-checked 2026-10-31 against the published tarball. 111 = `npm test` reporting \"pass 111\" on 2026-10-31 across test/*.test.js (contract 40, detect 20, run 20, routes 10, logdir 7, lifecycle 6, concurrency 4, supersede 4); re-count from `npm test`, not a grep, which undercounts a test declared across lines; 60 = ok-sites in test/e2e-loop.sh, which matches its runtime count; 12 MCP tools asserted by name in test/mcp-smoke.mjs. NO download figure on purpose: npm reports none for this package yet."
     },
     {
       "slug": "shadowjoin",
